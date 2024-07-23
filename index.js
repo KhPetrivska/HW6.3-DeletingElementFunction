@@ -1,22 +1,22 @@
-'use strict'
+'use strict';
 const arrayExample = [ 1, 2, 3, 3, 2, 2, -2, 2.3];
 
 function removeElement(array, item){
 for (let i = array.length - 1; i >= 0; i--){
     if ( !array.includes(item) ){
-        break
+        break;
     } else {
         if (array[i] === item ){
             const index = array.indexOf(item);
-            array.splice(index,1)
+            array.splice(index,1);
         }
     }
 }
-return  array
+return  array;
 }
 
-const result = removeElement(arrayExample, 2)
-console.log(result)
+const result = removeElement(arrayExample, 2);
+console.log(result);
 
 // function removeElement(array, item){
 //    const array2 = array
